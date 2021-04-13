@@ -1,0 +1,22 @@
+﻿<Window x:Class="BookPublisher.AddingCustomers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookPublisher"
+        mc:Ignorable="d"
+        Title="Новый заказчик" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background5.bmp"/>
+        </Grid.Background>
+        <TextBox Name = "NameCustomer" Margin="471,47,104,324"></TextBox>
+        <TextBox Name = "PhoneNumber" Margin="471,144,104,227"></TextBox>
+        <TextBox Name = "Adress" Margin="471,235,104,136"></TextBox>
+        <Button Content="Добавить" Margin="310,329,309,27" Click="Adding" Background="White" FontSize="24"></Button>
+        <TextBlock HorizontalAlignment="Left" Margin="114,47,0,0" TextWrapping="Wrap" Text="Наименование компании" VerticalAlignment="Top" Height="92" Width="229" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,144,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,235,0,0" TextWrapping="Wrap" Text="Адрес" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <Button Content="Назад" Margin="716,374,10,10" Click="BackWard" Background="White"/>
+    </Grid>
+</Window>

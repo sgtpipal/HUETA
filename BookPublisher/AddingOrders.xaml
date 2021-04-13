@@ -1,0 +1,28 @@
+﻿<Window x:Class="BookPublisher.AddingOrders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookPublisher"
+        mc:Ignorable="d"
+        Title="Новый заказ" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background5.bmp"/>
+        </Grid.Background>
+        <TextBox Name = "NumberOrder" Margin="471,15,104,356"></TextBox>
+        <DatePicker Name = "DateOrder" Margin="471,80,104,291"></DatePicker>
+        <TextBox Name = "CostOrder" Margin="471,145,104,226"></TextBox>
+        <ComboBox Name = "IDStatusOrder" Margin="471,211,104,160"></ComboBox>
+        <ComboBox Name = "IDBook" Margin="471,278,104,93"></ComboBox>
+        <ComboBox Name = "IDCustomer" Margin="471,342,104,29"></ComboBox>
+        <Button Content="Добавить" Margin="336,359,339,10" Click="Adding" Background="White" FontSize="24"></Button>
+        <TextBlock HorizontalAlignment="Left" Margin="114,15,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Height="48" Width="229" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,80,0,0" TextWrapping="Wrap" Text="Дата" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,145,0,0" TextWrapping="Wrap" Text="Стоимость" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,211,0,0" TextWrapping="Wrap" Text="Статус" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,278,0,0" TextWrapping="Wrap" Text="Книга" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,342,0,0" TextWrapping="Wrap" Text="Заказчик" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <Button Content="Назад" Margin="716,374,10,10" Click="BackWard" Background="White"/>
+    </Grid>
+</Window>

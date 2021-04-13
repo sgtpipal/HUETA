@@ -1,0 +1,26 @@
+﻿<Window x:Class="BookPublisher.OrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookPublisher"
+        mc:Ignorable="d"
+        Title="Заказы" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background4.bmp"/>
+        </Grid.Background>
+        <DataGrid Name="OrdersList" AutoGenerateColumns="False" Margin="0,0,362,0" Background="#FFFFFEFF" Loaded="Window_Loaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="1*" Binding="{Binding NumberOrder}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата" Width="1*" Binding="{Binding DateOrder}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Стоимость" Width="1*" Binding="{Binding CostOrder}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Добавить" Margin="548,60,90,312" Click="Added" Background="White"></Button>
+        <Button Content="Удалить" Margin="548,253,90,119" Click="Delete" Background="White"></Button>
+        <Button Content="Редактировать" Margin="548,157,90,215" Click="Edit" Background="White"></Button>
+        <Button Content="Назад" Margin="548,368,90,10" Click="Backward" Background="White"/>
+    </Grid>
+</Window>

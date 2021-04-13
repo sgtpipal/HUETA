@@ -1,0 +1,26 @@
+﻿<Window x:Class="BookPublisher.AddingBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookPublisher"
+        mc:Ignorable="d"
+        Title="Новая книга" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background5.bmp"/>
+        </Grid.Background>
+        <TextBox Name = "BookTitle" Margin="471,47,104,324"></TextBox>
+        <TextBox Name = "Edition" Margin="471,112,104,259"></TextBox>
+        <TextBox Name = "CostPrice" Margin="471,243,104,128"></TextBox>
+        <ComboBox Name = "IDAuthor" Margin="471,311,104,60"></ComboBox>
+        <DatePicker Name = "ReleaseDate" Margin="471,177,104,194"></DatePicker>
+        <Button Content="Добавить" Margin="329,359,326,5" Click="Adding" Background="White" FontSize="24"></Button>
+        <TextBlock HorizontalAlignment="Left" Margin="114,47,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Height="48" Width="229" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,112,0,0" TextWrapping="Wrap" Text="Издание" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,177,0,0" TextWrapping="Wrap" Text="Дата релиза" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,243,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,311,0,0" TextWrapping="Wrap" Text="Автор" VerticalAlignment="Top" Height="48" Width="158" FontSize="30" Foreground="Brown"/>
+        <Button Content="Назад" Margin="716,374,10,10" Click="BackWard" Background="White"/>
+    </Grid>
+</Window>
